@@ -1,38 +1,40 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Bootstrap</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <style>
-      #red{
-        background-color: rgb(162, 14, 39);
-        height: 500px;
-      }
-      #green{
-        background-color: rgb(48, 64, 48);
-        height: 100px;
-      }
-    </style>
-  
-    <!-- In bootstrap we can change color of text and background with the help of class -->
-    <!-- <div class="bg-primary text-white">   
+  <title>Bootstrap</title>
+</head>
+
+<body>
+
+  <style>
+    #red {
+      background-color: rgb(162, 14, 39);
+      height: 500px;
+    }
+
+    #green {
+      background-color: rgb(48, 64, 48);
+      height: 100px;
+    }
+  </style>
+
+  <!-- In bootstrap we can change color of text and background with the help of class -->
+  <!-- <div class="bg-primary text-white">   
       <h1>Hello</h1>
     </div> -->
 
-    <!-- Bootstrap Flow : container =>row =>column =>content(text & Image) OR columm>row>cloumn>content  -->
+  <!-- Bootstrap Flow : container =>row =>column =>content(text & Image) OR columm>row>cloumn>content  -->
 
-    <!-- Break Points 
+  <!-- Break Points 
      Breakpoint	          Class  infix Dimensions  syntax     Example     Applied 1                       Applied 2
      Extra small	        None	 <576px            col-*      col-12      col-lg-12 col-lg-12 col-lg-12   6,6,12
      Small	              sm	   ≥576px            col-sm-*               col-lg-12 col-lg-12 col-lg-12   8,4,6
@@ -43,8 +45,8 @@
 
     -->
 
-    <!-- APPLIED 1 -->
-    <!-- <div class="container-fluid" id="red">
+  <!-- APPLIED 1 -->
+  <!-- <div class="container-fluid" id="red">
       <div class="row" id="green">
         <div class="col-lg-4  bg-primary text-white">col-6</div>
         <div class="col-lg-6  bg-secondary text-white">col-6</div>
@@ -52,8 +54,8 @@
       </div>
     </div> -->
 
-    <!-- APPLIED 2 :Giving different size for breakpoints togthere -->
-    <!-- <div class="container-fluid" id="red">
+  <!-- APPLIED 2 :Giving different size for breakpoints togthere -->
+  <!-- <div class="container-fluid" id="red">
       <div class="row" id="green">
         <div class="col-lg-4  col-xl-5  col-md-6  col-sm-8  col-6  bg-primary text-white">col-6</div>
         <div class="col-lg-6  col-xl-5  col-md-3  col-sm-4  col-6  bg-secondary text-white">col-6</div>
@@ -61,8 +63,8 @@
       </div>
     </div> -->
 
-    <!-- NESTED COLUMN -->
-    <!-- <div class="container-fluid" id="red">
+  <!-- NESTED COLUMN -->
+  <!-- <div class="container-fluid" id="red">
       <div class="row" id="green">
         <div class="col-lg-4 bg-primary text-white">col-4</div>
         divide column into multiple section
@@ -76,8 +78,8 @@
       </div>
     </div> -->
 
-    <!-- Divied the space equal if one is assignedcol value (OR) No col is assigned value -->
-    <!-- <div class="container-fluid">
+  <!-- Divied the space equal if one is assignedcol value (OR) No col is assigned value -->
+  <!-- <div class="container-fluid">
       <div class="row">
         <div class="col bg-primary">div1</div>
         <div class="col-6 bg-secondary">div2</div>
@@ -85,8 +87,8 @@
       </div>
     </div> -->
 
-    <!-- Take the space as per text content : col-auto-->
-    <!-- <div class="container-fluid">
+  <!-- Take the space as per text content : col-auto-->
+  <!-- <div class="container-fluid">
       <div class="row">
         <div class="col bg-primary">div1</div>
         <div class="col-auto bg-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, soluta.</div>
@@ -94,8 +96,8 @@
       </div>
     </div> -->
 
-    <!-- class :row-cols-* -->
-    <!-- <div class="container-fluid">
+  <!-- class :row-cols-* -->
+  <!-- <div class="container-fluid">
       <div class="row row-cols-2 ">
         <div class="col bg-primary">div1</div>
         <div class="col bg-secondary">div2</div>
@@ -104,9 +106,9 @@
       </div>
     </div> -->
 
-    <!-- class :row-cols-auto = all the columns take the text space only -->
-    <!--  ***row-cols-auto not working-->
-    <!-- <div class="container-fluid">
+  <!-- class :row-cols-auto = all the columns take the text space only -->
+  <!--  ***row-cols-auto not working-->
+  <!-- <div class="container-fluid">
       <div class="row row-cols-auto ">
         <div class="col bg-primary">div1</div>
         <div class="col bg-secondary">this is div2</div>
@@ -115,8 +117,8 @@
       </div>
     </div> -->
 
-    <!-- 4 BOXES of height 400px -->
-    <!-- <div class="container-fluid">
+  <!-- 4 BOXES of height 400px -->
+  <!-- <div class="container-fluid">
       <div class="row" style="min-height: 400px;">
         <div class="col bg-primary">div1</div>
         <div class="col bg-secondary">div2</div>
@@ -125,8 +127,8 @@
       </div>
     </div> -->
 
-    <!-- align-items-center/start/end -->
-    <!-- <div class="container-fluid">
+  <!-- align-items-center/start/end -->
+  <!-- <div class="container-fluid">
       <div class="row align-items-center bg-warning" style="min-height: 400px;">
         <div class="col bg-primary">div1</div>
         <div class="col bg-secondary">div2</div>
@@ -135,8 +137,8 @@
       </div>
     </div> -->
 
-    <!-- Position of column vertical :align-self-* -->
-    <!-- <div class="container-fluid">
+  <!-- Position of column vertical :align-self-* -->
+  <!-- <div class="container-fluid">
       <div class="row bg-warning" style="min-height: 400px;">
         <div class="col bg-primary align-self-end">div1</div>
         <div class="col bg-secondary align-self-center">div2</div>
@@ -145,8 +147,8 @@
       </div>
     </div> -->
 
-    <!-- Postion of colum Vertically :justify-content-*  start/end/center/around/between/evenly-->
-    <!-- <div class="container-fluid">
+  <!-- Postion of colum Vertically :justify-content-*  start/end/center/around/between/evenly-->
+  <!-- <div class="container-fluid">
       <div class="row bg-warning justify-content-around" style="min-height: 400px;">
         <div class="col-4 bg-primary">div1</div>
         <div class="col-4 bg-secondary">div2</div>
@@ -156,7 +158,7 @@
 
 
 
-    <pre>
+  <pre>
       <!-- breakpoints
 
       Breakpoint	       Class     infix Dimensions  syntax      ORDER                    Order
@@ -171,8 +173,8 @@
     </pre>
 
 
-    <!-- RE-ORDERING :  order-class-position -->
-    <!-- <div class="container-fluid">
+  <!-- RE-ORDERING :  order-class-position -->
+  <!-- <div class="container-fluid">
       <div class="row bg-warning" style="min-height: 400px;">
         <div class="col-4 bg-primary order-lg-2  order-md-2">div1</div>
         <div class="col-4 bg-danger  order-lg-3  order-md-1">div2</div>
@@ -180,8 +182,8 @@
       </div>
     </div> -->
 
-    <!--lesser_the_number=it will come first(here div2 has no order means order=0 so,it will come first) -->
-    <!-- <div class="container-fluid">
+  <!--lesser_the_number=it will come first(here div2 has no order means order=0 so,it will come first) -->
+  <!-- <div class="container-fluid">
       <div class="row bg-warning" style="min-height: 400px;">
         <div class="col-4 bg-primary  order-lg-3">div1</div>
         <div class="col-4 bg-danger  ">div2</div>
@@ -189,8 +191,8 @@
       </div>
     </div> -->
 
-    <!-- OFFSETTING COLUMN  : Means giving space from left  : offset-(no.ofcol)*-->
-    <!-- <div class="container-fluid">
+  <!-- OFFSETTING COLUMN  : Means giving space from left  : offset-(no.ofcol)*-->
+  <!-- <div class="container-fluid">
       <div class="row bg-warning "style="min-height: 200px;">
         <div class="col-4 bg-primary  offset-1">div1</div>
 
@@ -202,9 +204,9 @@
   -->
 
 
-<!--------------CLASSES and COMPONENTS --------------------->
+  <!--------------CLASSES and COMPONENTS --------------------->
 
-<!-- <div class="container">
+  <!-- <div class="container">
   <div class="row">
     <div class="col-12">
       //text-center/end
@@ -217,9 +219,9 @@
   </div>
 </div> -->
 
-<!------------------ TABLE ------------->
-<!-- class:table -->
-<!-- 
+  <!------------------ TABLE ------------->
+  <!-- class:table -->
+  <!-- 
   Type:
   1.Variants 
   2.Striped rows
@@ -229,7 +231,7 @@
   6.Bordered tables /border color/borderless 
   ...etc
  -->
-<table class="table table-striped">
+  <!-- <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -257,9 +259,9 @@
       <td>@twitter</td>
     </tr>
   </tbody>
-</table>
+</table> -->
 
-<!-- NOTE: Responsive tables 
+  <!-- NOTE: Responsive tables 
   <div class="table-responsive">
   <table class="table">
     ...
@@ -267,19 +269,228 @@
 </div> 
 -->
 
+  <!------------------------FORM ----------------------->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <form action="">
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+              <div id="name" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            //File Input
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Default file input example</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+
+            //Select
+            <div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            //Checkbox and radio
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Checked checkbox
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Default radio
+              </label>
+            </div>
+
+            //Switch
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+            </div>
+
+            //Range
+            <div>
+              <label for="customRange1" class="form-label">Example range</label>
+              <input type="range" class="form-range" id="customRange1">
+            </div>
+
+            //input group
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+
+ <div class="container">
+  <div class="row">
+    <div class="col-4">
+      <form action="">
+
+        //Floating Lable
+        <div class="form-floating mb-3">
+          <label for="floatingInput">Email address</label>
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">   
+        </div>
+        <div class="form-floating">
+          <label for="floatingPassword">Password</label>
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        </div>
+      </form>
+    </div>
+  </div>
+ </div>
+-->
+
+  //Validation
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <form action="">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername"
+                  aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 
 
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
 
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
 
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
 
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 
+</body>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-  </body>
 </html>
