@@ -482,7 +482,7 @@
 -->
 
   <!------------------------- Accordion --------------------->
-<!-- 
+  <!-- 
  <div class="container">
     <div class="row">
       <div class="col-12">
@@ -511,8 +511,8 @@
  -->
 
 
- <!---------------------------- Alert -------------------------------->
- <!-- <div class="container">
+  <!---------------------------- Alert -------------------------------->
+  <!-- <div class="container">
   <div class="row">
     <div class="col-8">
       <div class="alert alert-primary" role="alert">
@@ -529,8 +529,8 @@
   </div>
  </div> -->
 
- <!----------------- Badge ---------------------->
-<!-- <div class="container">
+  <!----------------- Badge ---------------------->
+  <!-- <div class="container">
   <div class="row">
     <div class="col-8">
       <button type="button" class="btn btn-primary position-relative">
@@ -544,13 +544,13 @@
   </div>
 </div> -->
 
-<!------------------------ Breadcrumbs------------------------------->
-<!---------------------------------Buttons (IMP)--------------------------->
-<!--------------------------Button Group ---------------------------->
-<!-- card  (IMP) -->
+  <!------------------------ Breadcrumbs------------------------------->
+  <!---------------------------------Buttons (IMP)--------------------------->
+  <!--------------------------Button Group ---------------------------->
+  <!-- card  (IMP) -->
 
-<!-- Carousel (IMP)  Note : when add slide also add in <li data-target="#carouselExampleCaptions" data-slide-to=" nth slide "></li> -->
-<!-- 
+  <!-- Carousel (IMP)  Note : when add slide also add in <li data-target="#carouselExampleCaptions" data-slide-to=" nth slide "></li> -->
+  <!-- 
 <div class="container">
   <div class="row">
     <div class="col-12">
@@ -616,12 +616,218 @@
  -->
 
 
+  <!----------------------------- Close Button -------------------------------->
+
+  <!------------------------------------Collapas------------------------------->
+  <!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
+
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, error.
+        </div>
+      </div>
+
+    </div>
+  </div>
+ </div> -->
+
+  <!---------------------------Dropdown--------------------->
+  <!-- 
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-success">Action</button>
+          <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+
+  <!---------------------------------Modal (IMP)---------------------------->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-8">
+        //Button trigger modal
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+          Save
+        </button>
+
+        //Modal
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Are you sure want to save change</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                after saveing changes you can not editi them!!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!--------------------------------------Navs(IMP)----------------------------->
+<!-- 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">This is home tab</div>
+
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">This is profile tab.</div>
+
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">this is contact tab.</div>
+        </div>
+      </div>
+    </div>
+  </div> -->
 
 
- <!----------------------------- Close Button -------------------------------->
+  <!---------------------------------Navbars(V.IMP)------------------------------->
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
 
- <!------------------------------------Collapas------------------------------->
- 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark"">
+
+        <a class="navbar-brand" href="#"><img src="logo.jpg" width="50rem" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div> -->
+
+
+<!-----------------------------------OffCanvas-------------------------------->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-------------------------------------Pagination---------------------->
+
 
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
